@@ -3,7 +3,7 @@ import random
 import discord
 import array as arr
 
-# id = 570230173241442315
+
 from discord import message
 
 
@@ -30,7 +30,7 @@ async def on_member_join(member):
 
 @client.event
 async def on_message(message):
-    id = client.get_guild(570230173241442315)
+    id = client.get_guild()
     channels = ["chat"]
     #await client.change_presence(activity=discord.Game(name=''))
     activity = discord.Activity(name='My life flash before my very eyes', type=discord.ActivityType.watching)
